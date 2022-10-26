@@ -7,19 +7,19 @@ public class MyWorld {
 
 }//End MyWorld
 
-public interface Creature {
+interface Creature {
 
 }//End Creature
 
-public class Animal implements Creature {
+class Animal implements Creature {
 
 }// End Animal
 
-public class Cat extends Animal {
+class Cat extends Animal {
 
 }// End Cat
 
-public class Bunny extends Animal {
+class Bunny extends Animal {
 
 }// End Bunny
 
