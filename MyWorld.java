@@ -32,7 +32,6 @@ class Animal implements Creature {
 
 
 
-
 class Cat extends Animal {
 
 }// End Cat
