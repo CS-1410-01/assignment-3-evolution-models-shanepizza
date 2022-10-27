@@ -1,9 +1,9 @@
 import java.util.Random;
 
 /*
- * Editors: Adam Carling & Haley Bush
- * 
- * 
+ * Creators: Adam Carling & Haley Bush
+ * Githubs: Adam Carling: shanepizza
+ *          Haley Bush: 
  */
 
 
@@ -13,6 +13,7 @@ public class MyWorld {
     int numOfGrassBlades = 200;
 
     public static void main(String[] args) {
+    //run takes an int for the number of iterations that should exist before it terminates. 
         run(8);
 
     }//End Main
@@ -28,7 +29,7 @@ public class MyWorld {
         years--;
         
         run(years);
-        System.out.println("The year is: " + (years+1) + "AC (After Creation). Such is the history.");
+        System.out.println("The year is: " + (years+1) + "AC (After Creation). Such is the history:");
         rollSpawnChance(spawnChance);
     }// End of Run function
 
@@ -56,7 +57,7 @@ interface Creature {
 
 }//End Creature
 class Animal implements Creature {
-    
+
 }// End Animal
 
 
