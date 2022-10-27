@@ -56,9 +56,7 @@ interface Creature {
 
 }//End Creature
 class Animal implements Creature {
-    public static void spawnAnimal(){
-        System.out.println("Creature Spawned");
-    }
+    
 }// End Animal
 
 
