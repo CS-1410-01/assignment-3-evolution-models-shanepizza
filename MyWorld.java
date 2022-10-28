@@ -126,4 +126,8 @@ class Bunny extends Animal {
     public void swim(){
         System.out.println("The fish is swimming...");
     }
+<<<<<<< HEAD
 }// End Fish
+=======
+}// End Fish
+>>>>>>> 2760bbe30bb75ec1f2a55eb147ceb78f0013637a
