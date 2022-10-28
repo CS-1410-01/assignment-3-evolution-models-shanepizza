@@ -7,7 +7,6 @@ import java.util.Random;
  *          Haley Bush: SkyeBlack11
  */
 
- 
 public class MyWorld {
     static float spawnChance = 0.5f;
     int numAnimals = 0;
