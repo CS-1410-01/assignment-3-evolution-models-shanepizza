@@ -1,4 +1,3 @@
-
 import java.util.Random;
 
 /*
@@ -7,17 +6,19 @@ import java.util.Random;
  *          Haley Bush: SkyeBlack11
  */
 
+
 public class MyWorld {
     static float spawnChance = 0.5f;
+
     int numAnimals = 0;
 //Blades of grass is unused atm but will be used if we add in a death chance function later.
     int numOfGrassBlades = 200;
+
     public static void main(String[] args) {
     //run takes an int for the number of iterations that should exist before it terminates. 
         run(8);
 
     }//End Main
-
 //The run function should be kept seperate to allow for possible recursive calls and to keep the main() function looking clean.
     public static void run(int howlong) {
     //The ticking can be thought of as each year the world exists. 
@@ -84,7 +85,9 @@ class Animal implements Creature {
 //Specific Animal classes for future usage 
 class Cat extends Animal {
 
+
     public void hunt(){
+
         System.out.println("The cat is hunting...");
     }
 }// End Cat
@@ -101,4 +104,3 @@ class Fish extends Animal {
         System.out.println("The fish is swimming...");
     }
 }// End Fish
-
