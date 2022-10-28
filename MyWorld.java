@@ -9,9 +9,10 @@ import java.util.Random;
 
 public class MyWorld {
     static float spawnChance = 0.5f;
+    int numAnimals = 0;
 //Blades of grass is unused atm but will be used if we add in a death chance function later.
     int numOfGrassBlades = 200;
-    int numAnimals = 0;
+    
 
     public static void main(String[] args) {
     //run takes an int for the number of iterations that should exist before it terminates. 
@@ -66,21 +67,42 @@ interface Creature {
 
 }//End Creature
 class Animal implements Creature {
-    public void spawnAnimal (spawnRate){
-        float spawnRate = (float)Math.random;
+    
+    public void spawnAnimal (){
+        float animalType = (float)Math.random;
+        switch(animalType){
+        case(animalType < 0.11f):
+            Cat cat = new Cat();
+            return;
+        case(animalType < 0.41f):
+            Fish fish = new Fish();
+            return;
+        default: 
+            Bunny bunny = new Bunny();
+            return;
+        }
     }
+
+
     public void move() {    }
     public void swim() {    } 
     public void eat() {    }
     public void hunt(){    }
+    
+    
     public void multiply() {
-        if (Creature = 2) {
-            Creature = Creature + 1;
+        if (animalType > 1) {
+            animalType++;
         }
-
     }
-    public void DEATH (deathRate) {
-        float deathRate = (float)Math.random;
+    public void DEATH (float deathRate) {
+        float luck = (float)Math.random;
+        if(luck < deathRate){
+            numAnimals--;
+
+        }else{
+            System.out.println("You're Lucky");
+        }
     }
 }// End Animal
 //End of Haley's Part
@@ -88,20 +110,20 @@ class Animal implements Creature {
 
 class Cat extends Animal {
 
-    public static void hunt(){
+    public void hunt(){
         System.out.println("The cat is hunting...");
     }
 }// End Cat
 class Bunny extends Animal {
-    public static void multiply(){
+    public void multiply(){
         System.out.println("The bunny is multiplying...");
     }
-    public static void eat(){
+    public void eat(){
         System.out.println("The bunny is eating...");
     }
 }// End Bunny
  class Fish extends Animal {
-    public static void swim(){
+    public void swim(){
         System.out.println("The fish is swimming...");
     }
 }// End Fish
